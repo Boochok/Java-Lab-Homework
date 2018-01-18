@@ -1,5 +1,7 @@
 package com.epam.pair.programming;
 
+import com.epam.pair.programming.task2.Range;
+import com.epam.pair.programming.task2.RangeImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
