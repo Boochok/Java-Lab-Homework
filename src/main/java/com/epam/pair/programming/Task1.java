@@ -14,11 +14,11 @@ public class Task1 {
     }
 
     public int multiplication() {
-        int firstMultiPlie = 0;
-        int secondMultiPlie = 0;
+        int firstMultiPlie;
+        int secondMultiPlie;
         int multiplierResult = 0;
 
-        System.out.println("Inpu first multiplicating number.");
+        System.out.println("Input first multiplicating number.");
         try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in))) {
             firstMultiPlie = Integer.parseInt(bufferedReader.readLine());
             System.out.println("Input second multiplicating number.");
