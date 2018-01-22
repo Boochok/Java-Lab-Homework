@@ -102,7 +102,7 @@ class RangeImplTest {
 
     @Test
     @DisplayName("asIteratorWithInitList method in RangeImplTest.")
-    void asIteratorWithInitList() {
+    void asIteratorWithInitList()  {
         testRange.asList();
         Iterator<Long> iterator = testRange.asIterator();
         assertTrue(iterator.hasNext());
