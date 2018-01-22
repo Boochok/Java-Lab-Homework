@@ -1,11 +1,7 @@
 package com.epam.pair.programming;
 
-import com.epam.pair.programming.task2.Range;
 import com.epam.pair.programming.task2.RangeImpl;
-import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
 
 import java.util.Arrays;
 import java.util.Iterator;
@@ -18,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class RangeImplTest {
 
     private static RangeImpl testRange;
-    private static Range otherRange;
+    private static RangeImpl otherRange;
     private static List<Long> testValues;
 
     @BeforeAll
@@ -106,7 +102,7 @@ class RangeImplTest {
 
     @Test
     @DisplayName("asIteratorWithInitList method in RangeImplTest.")
-    void asIteratorWithInitList() {
+    void asIteratorWithInitList()  {
         testRange.asList();
         Iterator<Long> iterator = testRange.asIterator();
         assertTrue(iterator.hasNext());
