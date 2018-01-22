@@ -15,6 +15,7 @@ class Task1Test {
 
     @BeforeEach
     void setUp() {
+        System.out.println("Before each setUp method called.");
         test = new Task1();
     }
 
@@ -39,8 +40,10 @@ class Task1Test {
             test.division(2, 0);
         });
     }
+
     @AfterEach
-    public void tearDown(){
+    public void tearDown() {
+        System.out.println("Nulling test after test method exec.");
         test = null;
     }
 }

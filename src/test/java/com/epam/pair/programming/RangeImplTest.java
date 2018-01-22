@@ -2,6 +2,7 @@ package com.epam.pair.programming;
 
 import com.epam.pair.programming.task2.Range;
 import com.epam.pair.programming.task2.RangeImpl;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -76,4 +77,8 @@ class RangeImplTest {
             System.out.println(iterator.next());
     }
 
+    @AfterAll
+    public void tearDown(){
+        testRange = null;
+    }
 }
