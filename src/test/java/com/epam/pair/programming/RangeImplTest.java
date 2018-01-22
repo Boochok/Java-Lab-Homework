@@ -1,11 +1,7 @@
 package com.epam.pair.programming;
 
-import com.epam.pair.programming.task2.Range;
 import com.epam.pair.programming.task2.RangeImpl;
-import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
 
 import java.util.Arrays;
 import java.util.Iterator;
