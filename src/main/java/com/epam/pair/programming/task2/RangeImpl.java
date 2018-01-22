@@ -13,7 +13,7 @@ public class RangeImpl {
         this.up = up;
     }
 
-    public boolean isBefore(Range otherRange) {
+    public boolean isBefore(RangeImpl otherRange) {
         if (this.up < otherRange.getLowerBound()) {
             return true;
         } else {
@@ -21,7 +21,7 @@ public class RangeImpl {
         }
     }
 
-    public boolean isAfter(Range otherRange) {
+    public boolean isAfter(RangeImpl otherRange) {
         if (this.low > otherRange.getUpperBound()) {
             return true;
         } else {
@@ -29,7 +29,7 @@ public class RangeImpl {
         }
     }
 
-    public boolean isConcurrent(Range otherRange) {
+    public boolean isConcurrent(RangeImpl otherRange) {
         if (this.up == otherRange.getUpperBound() && this.low == otherRange.getLowerBound()) {
             return true;
         } else {

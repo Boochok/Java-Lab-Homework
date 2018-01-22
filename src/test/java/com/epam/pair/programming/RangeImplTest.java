@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class RangeImplTest {
 
     private static RangeImpl testRange;
-    private static Range otherRange;
+    private static RangeImpl otherRange;
     private static List<Long> testValues;
 
     @BeforeAll
